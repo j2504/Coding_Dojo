@@ -1,0 +1,21 @@
+<div>
+    <table>
+        <tr>
+            <th>username</th>
+            <th>password</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>course</th>
+            <th>attendance days</th>
+        </tr>
+        <tr *ngFor="let data of student;" class="">
+            <td>{{data.username}}</td>
+            <td>{{data.password}}</td>
+            <td>{{data.firstName}}</td>
+            <td>{{data.lastName}}</td>
+            <td>{{data.course}}</td>
+            <td>{{data.attendance}}</td>
+        </tr>
+    </table>
+    <button (click)="home()">Home</button>
+</div>
